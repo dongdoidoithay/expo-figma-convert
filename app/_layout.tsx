@@ -29,28 +29,9 @@ export default function RootLayout() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false}} />
-          <Stack.Screen name="genres" options={{ headerShown: false,
-              animation:  'slide_from_right'  }} />
-          <Stack.Screen name="library" options={{ headerShown: false,
-              animation:  'slide_from_right'  }} />
          
-          <Stack.Screen
-            name="detail"
-            options={{
-              headerShown: false,
-              animation:  'slide_from_right' 
-            }}
-          />
-           <Stack.Screen
-            name="read"
-            options={{
-              headerShown: false,
-              animation:  'slide_from_right' 
-            }}
-          />
           <Stack.Screen name="+not-found" />
-          <Stack.Screen name="setting" options={{ headerShown: false }} />
-        </Stack>
+          </Stack>
         <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       </ThemeProvider>
     </FontProvider>
